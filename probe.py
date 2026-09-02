@@ -3,7 +3,8 @@ from playwright.sync_api import sync_playwright
 URL = "https://wizyty.uml.lodz.pl/"
 
 with 
-sync_playwright() as p:
+sync_playwright() as
+p:
     browser = p.chromium.launch(headless=True)
     page = browser.new_page()
 
